@@ -1,0 +1,15 @@
+{
+  "name": "whatgostar",
+  "version": "1.0.0",
+  "description": "jit tailwindcss",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^2.0.1"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/styles.css  -o ./public/css/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles.css  -o ./public/css/styles.css --JIT --purge='./*.html'"
+  },
+  "author": "",
+  "license": "ISC"
+}
